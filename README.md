@@ -30,7 +30,7 @@
     *   撰寫腳本測試 `torch.cuda.Stream` 與 `Pinned Memory` 的異步傳輸頻寬。
     *   驗證 PyTorch Hooks (`register_full_backward_hook`) 攔截梯度與權重的可行性。
 
-### Phase 1: 單卡極限生存引擎 (Weeks 3-8)
+### Phase 1: 單卡極限生存引擎
 **目標**：在單張 24GB 顯卡上成功訓練 Llama-2-70B (Batch Size=1)，不求快，但求不 OOM。
 
 *   **W3-W4: 權重與梯度卸載 (Static Offloading)**
