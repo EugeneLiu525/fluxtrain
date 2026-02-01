@@ -20,7 +20,7 @@
 
 ## 3. 詳細執行階段 (Phases)
 
-### Phase 0: 架構設計與技術驗證 (Weeks 1-2)
+### Phase 0: 架構設計與技術驗證
 **目標**：確定底層技術路線，驗證 Python 與 CUDA 之間的記憶體搬運極限。
 
 *   **W1: 競品分析與核心設計**
@@ -43,7 +43,7 @@
     *   開發 `fluxtrain.auto_wrap(model)` 接口。
     *   完成 HuggingFace Transformers 的無縫整合測試。
 
-### Phase 2: 速度優化與硬體感知 (Weeks 9-14)
+### Phase 2: 速度優化與硬體感知
 **目標**：解決 Phase 1 的「慢」問題，利用流水線技術隱藏 IO 延遲。
 
 *   **W9-W10: 預取機制 (Prefetching)**
@@ -56,7 +56,7 @@
     *   原生整合 8-bit / 4-bit Optimizer (基於 `bitsandbytes`)。
     *   實作混合精度 (BF16/FP16) 的自動轉換邏輯。
 
-### Phase 3: 多卡擴展與自動分片 (Weeks 15-20)
+### Phase 3: 多卡擴展與自動分片
 **目標**：超越 DeepSpeed 的易用性，實現「插卡即用」的分散式訓練。
 
 *   **W15-W16: 自動分片 (Auto-Sharding)**
@@ -67,7 +67,7 @@
 *   **W19-W20: 異構集群支援**
     *   支援非對稱顯卡（例如一張 3090 + 一張 4090）的負載平衡（Load Balancing），根據顯存大小分配不同數量的 Layers。
 
-### Phase 4: 使用者體驗與發布 (Weeks 21-24)
+### Phase 4: 使用者體驗與發布
 **目標**：打造「開發者友善」的工具，準備開源。
 
 *   **W21: TUI 儀表板 (Dashboard)**
